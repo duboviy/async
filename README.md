@@ -4,14 +4,7 @@ by [Eugene Duboviy](https://duboviy.github.io/)
 
 [![Code Health](https://landscape.io/github/duboviy/async/master/landscape.svg?style=flat)](https://landscape.io/github/duboviy/async/master) [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/duboviy/async/) [![PRs & Issues Welcome](https://img.shields.io/badge/PRs%20&%20Issues-welcome-brightgreen.svg)](https://github.com/duboviy/async/pulls) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/duboviy/async/)
 
-Samdbox for trying out asynchronous frameworks: twisted, gevent and tornado.
-
-
-## Installation:
-
-```
-pip install https://github.com/duboviy/async/archive/master.zip
-```
+Sandbox for trying out asynchronous frameworks: twisted, gevent and tornado.
 
 ## License
 
