@@ -10,20 +10,20 @@ output_file = sys.stdout   # open( 'log.dat', 'w')
 
 class ChatEchoServer(basic.LineReceiver):
 
-        def connectionMade(self):
-            self.factory.clients.append(self)
+    def connectionMade(self):
+        self.factory.clients.append(self)
 
-        def connectionLost(self, reason):
-            self.factory.clients.remove(self)
+    def connectionLost(self, reason):
+        self.factory.clients.remove(self)
 
-        def dataReceived(self, line):
-            output_file.write("dataReceived: %s" % line)
-            for c in self.factory.clients:
-                c.message(str(len(factory.clients))+'\r\n')
+    def dataReceived(self, line):
+        output_file.write("dataReceived: %s" % line)
+        for c in self.factory.clients:
+            c.message(str(len(factory.clients))+'\r\n')
 
-        def message(self, message):
-            output_file.write("message %s" % message)
-            self.transport.write(message)
+    def message(self, message):
+        output_file.write("message %s" % message)
+        self.transport.write(message)
 
 """
  epoll is a Linux-only feature. twisted.internet.epollreactor is only
