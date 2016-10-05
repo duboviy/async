@@ -1,0 +1,18 @@
+strictness: medium
+autodetect: yes
+
+pylint:
+  disable:
+    # W0612: Unused variable %r
+    - W0612
+    # W0613: Unused argument %r
+    - W0613
+    # W0105: String statement has no effect
+    - W0105
+    # W0702: No exception type(s) specified
+    - W0702
+
+pyflakes:
+  disable:
+    # F401: unused import
+    - F401

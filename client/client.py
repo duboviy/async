@@ -26,7 +26,7 @@ port = 8001
 output_file = sys.stdout   # open( 'log.dat', 'w')
 
 
-class GlobalStats():
+class GlobalStats(object):
     connections = 0
     crefuse = 0
     closed = 0
