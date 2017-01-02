@@ -1,0 +1,17 @@
+Running 30s test @ http://127.0.0.1:8000/fibonacci/2015
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.49s     5.95s   25.65s    67.94%
+    Req/Sec    29.17     56.09   188.00     82.74%
+  7897 requests in 30.02s, 4.38MB read
+  Socket errors: connect 0, read 118, write 0, timeout 4446
+Requests/sec:    263.10
+Transfer/sec:    149.54KB
+Running 30s test @ http://127.0.0.1:8000/fibonacci/2015
+  2 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    13.13ms  380.60us  18.69ms   88.67%
+    Req/Sec   383.29     18.46   423.00     68.85%
+  22714 requests in 30.00s, 12.61MB read
+Requests/sec:    757.12
+Transfer/sec:    430.32KB

@@ -1,0 +1,9 @@
+Running 30s test @ http://127.0.0.1:8000/count/flask
+  12 threads and 400 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    26.66s     6.56s   29.99s    87.14%
+    Req/Sec     0.08      0.27     1.00     92.50%
+  58 requests in 30.01s, 9.11KB read
+  Socket errors: connect 0, read 0, write 0, timeout 5800
+Requests/sec:      1.93
+Transfer/sec:     310.84B
