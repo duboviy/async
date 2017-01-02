@@ -27,6 +27,7 @@ def task(det, size=4):
     assert size > 0
 
     with verbose(det):
+        result = None
         if det == 1:
             ma = make_sq_matrix(size)
             md = make_sq_matrix(size)
