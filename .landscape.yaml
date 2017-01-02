@@ -11,6 +11,13 @@ pylint:
     - W0105
     # W0702: No exception type(s) specified
     - W0702
+    # W0622: Redefining built-in variable
+    - W0622
+    # E1004: Missing argument to super()
+    - E1004
+    - E0001
+    # W0212: 	Access to a protected member _cancelled of a client class
+    - W0212
 
 pyflakes:
   disable:

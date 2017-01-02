@@ -20,7 +20,7 @@ def worker(num, queue):
             while b'\n' not in _buffer:
                 _buffer += sock.recv(4096)
             msg = _buffer[:_buffer.index(b'\n')]
-            log.info("Received message '{}'".format(msg.decode('utf-8')))
+            log.info("Received message '%s'", msg.decode('utf-8'))
             sock.sendall(b'Echo: ' + msg + b'\n')
         except OSError:
             log.exception('Exception in worker:')
@@ -32,7 +32,7 @@ def run_server():
                     for num in range(WORKER_COUNT)]
     for w in workers:
         w.start()
-    log.info("Start server with address {0}:{1}".format(*ADDRESS))
+    log.info("Start server with address %s:%d", *ADDRESS)
     try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.bind(ADDRESS)
